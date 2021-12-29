@@ -27,16 +27,27 @@ bad_request = LED(5)
 def increment_habit(habitName, date):
     print("hit")
     habit = {'habitName': habitName, 'date': date}
-    response = requests.post(url, data=habit)
-    return response.json()["isError"]
+    try:
+        response = requests.post(url, data=habit)
+    except:
+        return "404"
+    if response.json()["isError"]:
+        return "dup"
+    else:
+        return None
     
 
 while True:
-    error = False
+    error = None
     if deorder.is_pressed:
         print("test")
         error = increment_habit("test", "2021-10-01")
-    if error:
+    if error == "dup":
+        led.on()
+        print("error")
+        time.sleep(1)
+        led.off()
+    if error == "404":
         led.on()
         print("error")
         time.sleep(1)
