@@ -6,53 +6,50 @@ from gpiozero import LED
 
 
 url = 'http://192.168.86.25:5000//habit'
-#brush = Button(1)
-deorder = Button(26)
-#shave = Button(3)
-#shower = Button(4)
+actions = {"deorder":{"button": Button(21), "light": LED(19)}}
 
-bad_request = LED(5)
-#no_response = LED(6)
-#success = LED(7)
 
-#brush_led = LED(8)
-#deorder_led = LED(9)
-#shave_led = LED(10)
-#show_led = LED(11)
+bad_request = LED(20)
+no_response = LED(16)
+success = LED(26)
 
 
 #led = LED(4)
 #button = Button(26)
 
-def increment_habit(habitName, date):
+
+def increment_habit(habitName, date, action):
     print("hit")
     habit = {'habitName': habitName, 'date': date}
     try:
         response = requests.post(url, data=habit)
     except:
+        print("here")
         return "404"
     if response.json()["isError"]:
         return "dup"
     else:
-        return None
+        actions[action]["light"].on()
+        return "200"
     
 
 while True:
-    error = None
-    if deorder.is_pressed:
-        print("test")
-        error = increment_habit("test", "2021-10-01")
-    if error == "dup":
-        led.on()
-        print("error")
+    response = None
+    for action in actions.keys():
+        if actions[action]["button"].is_pressed:
+            response = increment_habit("test", "2021-12-02", action)
+    if response == "200":
+        success.on()
         time.sleep(1)
-        led.off()
-    if error == "404":
-        led.on()
-        print("error")
+        success.off()
+    if response == "dup":
+        bad_request.on()
         time.sleep(1)
-        led.off()
-    time.sleep(1)
+        bad_request.off()
+    if response == "404":
+        no_response.on()
+        time.sleep(1)
+        no_response.off()
     
         
         
