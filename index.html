@@ -13,18 +13,17 @@
             <h1 class="text-center">Year in Review 2021</h1>
             <p class="text-center"> I can technically call this my annual breakdown of my life in a series of graphs, as I have done this for two years now, and being technically correct is the best kind.   </p>
             <p class="text-center"> Once again I'm breaking my life down to 3 categories, Education, Meditation, and Learning which maps nicely to the original notion of Mind, Body and Soul. And from the looks of it, I did a pretty good job of keeping all 3 in balance</p>
-            <p class="text-center"> Most of my data was generated using Habbitica, everytime I did a habit I was tracking I would click a button on their website to logs I finished that task. The basic rule I followed is that each habit can only be tracked once per day (I may upgrade this in the future)</p>
+            <p class="text-center"> Most of my data was generated using Habbitica, everytime I did a habit I was tracking I would click a botton on their website to logs I finished that task. The basic rule I followed is that each habit can only be tracked once per day (I may upgrade this in the future)</p>
             <p class="text-center">For instance, If I went for a run I would click the "Run" habit and it would be logged for that day. I also kept track with my fitbit, the waking up app, audible, and podcast addict which passively tacked my data in the background</p>
-            <p class="text-center">Also the vast majority of the plots are interactive, so feel free to click on them, including the legends, if things get totally messed up, click the home button in the top right to reset any chart</p>
+            <p class="text-center">Also the vast majority of the plots are interactive, so feel free to click on them, including the legends</p>
             <h2 class="text-center">All Habits</h1>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\sunburst.html" height="800" width="800"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/sunburst.html" height="800" width="800"></iframe>
             </div>
             <p class="text-center">This is the hightest level overview of my habits, each number represents the number of days I did that activity</p>
             <p class="text-center">So this year I Meditation for 181 days, which is about 50% of the year</p>
-            <p class="text-center"> I also did some sort of educational activity for 330 days, although on many days I would do more then 1 thing </p>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\heatmap.html" height="800" width="800"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/heatmap.html" height="800" width="800"></iframe>
             </div>
             <p class="text-center">This is a correlation graph, it trys to answer the question "If I ran, how likely was I to also meditate?" Brighter colors means it's more likely, which is why the diaginal is all yellow</p>
             <p class="text-center">There are a few standouts here, Running and Meditating are highly correlated, which makes sense, since I would almost always meditate for a short period after a run</p>
@@ -32,23 +31,23 @@
             <p class="text-center">I also ran a basket analysis which confirmed the correlation between running, and meditating, but most habits were independent of each other</p>
 
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\habitMetaFrequency.html" height="400" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/habitMetaFrequency.html" height="400" width="1200"></iframe>
             </div>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\habitFrequency.html" height="400" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/habitFrequency.html" height="400" width="1200"></iframe>
             </div>
             <p class="text-center">Looking at my habits by day of the week, we can see to the surprise of no one, I don't like to do stuff on the weekend, with the exception of yoga, and maybe some class work</p>
             
             <h2 class="text-center">Meditation</h1>
             <div class="d-flex justify-content-center">
-                <img src=".\MeditateDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/MeditateDates.png" alt="" width="1200">
             </div>   
             <p class="text-center">Each of the main sections will have these calendar graphs, to show how my habits changed throughout the year. It should be noted I took a break tracking everything in the 2nd half of december, so there is no data there.</p>
             
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\meditationBreakdown.html" height="800" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/meditationBreakdown.html" height="800" width="1200"></iframe>
             </div>
-            <p class="text-center">Not a ton to note here, except I somehow managed to split the time meditating with a guided practice (someone telling me what to do) and practicing with a timer almost exactly 50-50. This was a complete accident, but I love it. You can see I started this year with more guided practices and transition to using a timer more often </p>
+            <p class="text-center">Not a tone to note here, except I somehow managed to split the time meditating with a guided practice (someone speaking to me telling me what to do) and practicing with a timer almost exactly 50-50. This was a complete accident. </p>
             <p class="text-center">You can also see two spikes in the duration of my practice 10 mins, and 20 mins, this is because the App I use (waking up) has those as the two default options</p>
             <p class="text-center">There are also some days, that I practiced without using the app, and these are not tracked here, but can be seen in the aggregate data under "other"</p>
             
@@ -56,16 +55,16 @@
             
             <h2 class="text-center">Education</h1>
             <div class="d-flex justify-content-center">
-                <img src=".\GroupStudyDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/GroupStudyDates.png" alt="" width="1200">
             </div> 
             <div class="d-flex justify-content-center"> 
-                <img src=".\ProgrammingDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/ProgrammingDates.png" alt="" width="1200">
             </div> 
             <div class="d-flex justify-content-center">
-                <img src=".\ClassDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/ClassDates.png" alt="" width="1200">
             </div> 
             <div class="d-flex justify-content-center">
-                <img src=".\ReadingDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/ReadingDates.png" alt="" width="1200">
             </div>
             <p class="text-center">I think the most interesting pattern here is how my indepenent programming basically ended as soon as classes started</p>
             <p class="text-center">I should also explain what exactly "group study" means. Me and my good friend Andrew, have been learning machine learning together for a while now. This represents all the days we got together and worked on something with that goal in mind. This would sometimes be reading, programming, watching youtube videos or whatever we felt would help. If we programmed I did not also count this as "programming" or "reading", I determined each habit only counts once, no dubbling up on activities. </p>
@@ -73,82 +72,72 @@
             
             <h3 class="text-center">Online Classes Finsihed</h3>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\classes_taken.html" height="500" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/classes_taken.html" height="500" width="1200"></iframe>
             </div>
             <p class="text-center">These are all the courera classes I finished this year and when I finished them. "SIADS" are classes at University of Michigan</p>
             
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\listeningBreakdown.html" height="600" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/listeningBreakdown.html" height="600" width="1200"></iframe>
             </div>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\podcastBreakdown.html" height="600" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/podcastBreakdown.html" height="600" width="1200"></iframe>
             </div>
             <p>I am not the strongest reading in the world, far from it, and I am so greatful to live in a time when audio books, and podcasts are so prevalent, as it has allowed me to access a world I would have otherwise struggled to enter.  </p>
             <p>I have spent about 25 full days listening to podcasts or reading audio books this year. I try to alternate between fiction and non-fiction, this year having a theme of philosophy and socail networks for the non-fiction.  </p>
-            <p>How did I find the time to do this? The best aspect of audio books is you can multi-task with them. Particularly, when it comes to "mindless" tasks, like walking the dog, cleaning the house or doing long road trips. Busy work has now become an opportunity to consume wonderful enriching content. </p>
+            <p>How did I find the time to do this? The best aspect of audio books is you can multi-task with them. Particularly, when it comes to "mindless" tasks, like walking the dog, cleaning the house or doing long road trips. Busy work has now become an opertunity to consume wonderful enriching content. </p>
             <p>I should note, audible sucks at data tacking so the values for it I got by just adding up the lengths of each book, which doesn't include times I would need to rewind to re-listen to a section that I missed</p>
-            <p>And to any purest who think audio books don't "count" or something, I like to think of them as the original form of storytelling harking back to the days around a campfire. And it's all the book readers who are using some weird unatural technology!/s</p>
+            <p>And to any purest who think audio books don't "count" or something, I like to think of them as the original form of storytelling harking back to the days around a campfire. And it's all the book reading who are using a weird unatural technology!/s</p>
             
             <h3 class="text-center">Audio Books Read</h3>
             <div class="d-flex justify-content-center">
-                <img src=".\AudibleBooks2021.jpg" alt="">
+                <img src="{{ baseurl }}/webpage/AudibleBooks2021.jpg" alt="">
             </div>
-            <p class="text-center"> Some quick book reviews</p> 
-            <p class="text-center"> For the non-fiction, the stars were:</p>
-            <p class="text-center"> History of Western Philosophy: I have become a huge Bertran Russell fan after this, and learned a great deal about the themes that wove through wester philosophy over time. I also like how he gives his frank opinons on philosophers </p>
-            <p class="text-center"> Twitter and Tear Gas + Connected: Both of these books are about human networks and help explain how politics, activism, and epistimology have changed because of the new networks engabled by technology. Last Year I read "The tower and the square" which is a historical look at how human networks clashed with institutinal hierarchies, such as the printing press vs the chruch </p>
-            <p class="text-center"> Fiction:</p>
-            <p class="text-center"> The Red Sister series, It's magical nun assasians and on ice world that is warmed by what is basically an Ion cannon. What more can I say they rock</p>
+        
             <h2 class="text-center">Fitness</h1>
             <div class="d-flex justify-content-center">
-                <img src=".\YogaDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/YogaDates.png" alt="" width="1200">
             </div>
             <div class="d-flex justify-content-center">
-                <img src=".\RunDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/RunDates.png" alt="" width="1200">
             </div>
             <div class="d-flex justify-content-center">
-                <img src=".\WeightsDates.png" alt="" width="1200">
+                <img src="{{ baseurl }}/webpage/WeightsDates.png" alt="" width="1200">
             </div>
-            <p> The last main section for this year: fitness. A few things to note at the start, first I do not like running in the snow, and second I can't seem to make my weight lifting habit to stick. Both this year and last I only lifted weights 10 times. There is always 2022.</p> 
+            <p> The last main section for this year fitness, a few things to note at the start, first I do not like running in the snow, and second I can't seem to make my weight lifting habit to stick. </p> 
             <p>Also I developed some pretty bad shin splints, in my right leg probably from growing up doing hockey, wresting, and snow skiing bascially everything that would impact my knee. Also getting hit by a car didn't do me any favors, but I'm working on it and decided to keep my milage in check this year to prevent myself from aggravating the problem</p>
             
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\exerciseHeartRates.html" height="600" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/exerciseHeartRates.html" height="600" width="1200"></iframe>
             </div>
-            <p class="text-center">These plots show how often my heart rate was at certain values during an exercise. For instance when running my heart rate was on average 163 BPM which is the widest part of the graph. </p>
+            <p class="text-center">These plots show how often my heart rate was at certain values during an exercise. For instance when running my heart rate on average 163 BPM which is the widest part of the graph. </p>
             <p class="text-center">Yoga has the largest variance which makes sense to me as there are a lot of fast, slow and intermediate sections to the workout</p>
             <p class="text-center">And Weight lifting has the lowest heart rate, I take my time when lifting weights between each set giving my heart rate time to calm down. </p>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\exerciseCalories.html" height="800" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/exerciseCalories.html" height="800" width="1200"></iframe>
             </div>
             <p class="text-center">Last but not least, how many calories do I burn for each workout? And which workout burns the most calories?</p>
-            <p class="text-center">This is slightly complicated because how long each workout is varies so much. So I broke this down into 3 graphs to disentangle the variables</p>
+            <p class="text-center">This is slightly complicated because how long each workout is varies so much so I broke this down into 3 graphs</p>
             <p class="text-center">The top left show how many calories I burned in the total workout, so for a typical 45-60min yoga class I burn about 450 calories</p>
             <p class="text-center">Next I visualized the distribution of the workout durations. As we can see I run for the shortest amount of time, and I do yoga and weight lifting for amount the same amount of time between 45mins and an hour</p>
-            <p class="text-center">Finally I showed the calories burned per minute, which to no surprise running takes it by a mile(heh), with me burning an avg of 16 calories per minute</p>
+            <p class="text-center">Finally I showed the calories burned per minute, which to not surprise running takes it by a mile, with me burning an avg of 16 calories per minute</p>
             <p class="text-center">This means If I want to burn calories as quickly as possible I should run, but I will burn out just as quickly. If I want to burn the most calories I should do yoga, but it will take longer</p>
             <h2 class="text-center">Compared to Previous Years</h1>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\sunburst_19.html" height="800"  width="50%"></iframe>
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\sunburst.html" height="800"  width="50%"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/sunburst_19.html" height="800"  width="50%"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/sunburst.html" height="800"  width="50%"></iframe>
             </div>
             <p class="text-center">Finally I can compare some of these results to the previous years. I apologise for the mismatching colors on the sunburst chart, but it's kinda a pain to fix, and I got classes to take!</p>
             <p class="text-center">Overall I exercised more, did more to advance my education, but meditated less</p>
-            <p class="text-center"> In the previous year I did not have "group study" and instead I would track what we were doing IE: programming, reading, or working on strickly math problems. I decided to change this, because our session were so free form it was hard to come up with a good category everytime, so I decided to make it a category in and of itself. Of course this year I feel like we were way more focused, but I have no way to prove that because I don't have the data.</p>
+            <p class="text-center"> In the previous year I did not have "group study" and instead I would track what we were doing IE: programming, reading, or working on strickly math problems. I decided to change this, because our session were so free form it was hard to come up with a good category everytime, so I decided to make it a category in and of itself.</p>
 
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\milesRanYears.html" height="400" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/milesRanYears.html" height="400" width="1200"></iframe>
             </div>
             <p class="text-center">This chart is looking at how often I ran a certain distance. So in 2021 I ran between 1 and 2 miles 39 times. 2020 was when I developed shin splints, right after I did a couple of 5 mile runs (I'm missing the data for one of them). Which completly stopped my progress in my tracks.</p>
-            <p class="text-center">It also slowed my yoga progress, as I used it as an excuse to stop doing basically any fitness. With covid shutting my yoga studio down, and then the shin splints stopping me from running I decided the universe wanted me to take a break, so I did and gained a bunch of weight. Really I should have just went back to doing more yoga at home, but lazyness won the day...or the year. But I have done this journey before and I'll do it agian</p>
+            <p class="text-center">It also slowed my yoga progress, as I used it as an excuse to stop doing basically any fitness. With covid shutting my yoga studio down, and then the shin splints from running I decided the universe wanted me to take a break, so I did and gained a bunch of weight. But I done this journey before and I'll do it agian</p>
             <div class="d-flex justify-content-center">
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src=".\MPHYears.html" height="400" width="1200"></iframe>
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="{{ baseurl }}/webpage/MPHYears.html" height="400" width="1200"></iframe>
             </div>
-            <h1>Next Steps</h1>
-            <p class="text-center">This year I'm upgrading my tracking system with some physical buttons, that are hooked up to some rasberry pis which will communicate directly to a DB on my main computer. I got a prototype working and just need to make the finished products. Maybe one day I'll use these to track how long I do each workout, not just "Yes I did X and Y Day" </p>
-            <p class="text-center">If you made it this far thanks for reading I really appreciate it! If you have any suggestions let me know, I really want this to become a regular thing, and more importantly to gain insight that will allow me to alter my behavior to better acomplish my goals.</p>
-            <p class="text-center">I do realize this is a little self aggrandizing, but I have always struggled with routine, and orginization and this project has motivated me to keep at it, cause I know I'm going to publish this publically good or bad and the socail pressure helps. After all I don't want my friends to call me a lazy sack of potatoes!  
-
                 
         </div>
 
