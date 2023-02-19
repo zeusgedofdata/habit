@@ -1,2 +1,3 @@
 *.properties
 *.ipynb_checkpoints
+*.csv
